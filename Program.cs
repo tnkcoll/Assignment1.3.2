@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             string[] monthsOfYear = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-            int lengthOfArray = monthsOfYear.Length;
             string temp;
 
             Console.WriteLine("The values stored into the array are:");
@@ -17,11 +16,11 @@
 
             Console.WriteLine();
 
-            for (int i = 0; i < (lengthOfArray / 2); i++)
+            for (int i = 0; i < (monthsOfYear.Length / 2); i++)
             {
                 temp = monthsOfYear[i];
-                monthsOfYear[i] = monthsOfYear[lengthOfArray - i - 1];
-                monthsOfYear[lengthOfArray - 1 - i] = temp;
+                monthsOfYear[i] = monthsOfYear[monthsOfYear.Length - i - 1];
+                monthsOfYear[monthsOfYear.Length - 1 - i] = temp;
             }
 
             Console.WriteLine("The values stored into the array in reverse are:");
