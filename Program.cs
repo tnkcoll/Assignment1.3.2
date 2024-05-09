@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             string[] monthsOfYear = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-            int lengthOfArray = 12;
+            int lengthOfArray = monthsOfYear.Length;
             string temp;
 
             Console.WriteLine("The values stored into the array are:");
